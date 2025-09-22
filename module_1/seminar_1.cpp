@@ -3,5 +3,6 @@
 using namespace std;
 
 int main() {
-    std::cout << "Hello World!" << std::endl;
+    short a = -8;
+    std::cout << a << std::endl;
 }

@@ -1,7 +1,10 @@
 #include<iostream>
+#include<cmath>
 
 using namespace std;
 
 int main() {
-    std::cout << (1 > 0) + (4 % 2 == 0) << std::endl;
+    unsigned int a = 7;
+    std::cout << ~a << std::endl;
+    std::cout << pow(2,32)-8 << std::endl;
 }
