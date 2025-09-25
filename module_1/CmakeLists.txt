@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.20)
+project(seminar_3 CXX)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED  ON)
+set(CMAKE_CXX_STANDARD_EXTENSIONS OFF)
+
+add_executable(seminar_3 seminar_3/task_1_3.cpp)
+add_executable(seminar_3 seminar_3/task_2_3.cpp)
+add_executable(seminar_3 seminar_3/task_3_3.cpp)
+add_executable(seminar_3 seminar_3/task_4_3.cpp)
+add_executable(seminar_3 seminar_3/task_5_3.cpp)
+add_executable(seminar_3 seminar_3/task_6_3.cpp)
+add_executable(seminar_3 seminar_3/function.h seminar_3/task_7_3.cpp)
+add_executable(seminar_3 seminar_3/task_8_3.cpp)
+add_executable(seminar_3 seminar_3/task_9_3.cpp)
+add_executable(seminar_3 seminar_3/math_operators.h seminar_3/task_10_3.cpp)
