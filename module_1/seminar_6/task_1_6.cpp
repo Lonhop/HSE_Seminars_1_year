@@ -8,7 +8,8 @@ int main() {
     int i = 0;
 
     while (true) {
-        std::cout <<"Loading" << "\r" << loader_chars[i] << std::flush;
+        std::cout << '\n';
+        std::cout << "\r" << loader_chars[i] << std::flush;
         i = (i + 1) % num_chars;
         std::this_thread::sleep_for(std::chrono::milliseconds(300));
     }
