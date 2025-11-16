@@ -1,0 +1,132 @@
+N=8192 elements
+PushBack:
+	vector: 0.306092 ms
+	deque: 0.4689 ms
+	list: 0.711 ms
+
+PushFront:
+	vector: 2.65743 ms
+	deque: 0.430683 ms
+	list: 0.582754 ms
+
+RandomInsert:
+	vector: 2.27364 ms
+	deque: 4.9001 ms
+	list: 47.7179 ms
+
+RandomErase:
+	vector: 2.35165 ms
+	deque: 5.41246 ms
+	list: 25.9826 ms
+
+IterateSum:
+	vector: 0.559883 ms
+	deque: 0.621304 ms
+	list: 0.843271 ms
+
+RandomAccess:
+	vector: 0.579679 ms
+	deque: 0.674483 ms
+	list: 6.13478 ms
+
+
+
+N=32768 elements
+PushBack:
+	vector: 0.532146 ms
+	deque: 0.903158 ms
+	list: 1.60418 ms
+
+PushFront:
+	vector: 23.3491 ms
+	deque: 1.50116 ms
+	list: 2.09607 ms
+
+RandomInsert:
+	vector: 24.3202 ms
+	deque: 39.4 ms
+	list: 571.627 ms
+
+RandomErase:
+	vector: 21.674 ms
+	deque: 38.4764 ms
+	list: 320.122 ms
+
+IterateSum:
+	vector: 2.23977 ms
+	deque: 2.53502 ms
+	list: 3.42254 ms
+
+RandomAccess:
+	vector: 2.18497 ms
+	deque: 2.50548 ms
+	list: 10.7171 ms
+
+
+
+N=262144 elements
+PushBack:
+	vector: 4.27102 ms
+	deque: 7.19874 ms
+	list: 12.8047 ms
+
+PushFront:
+	vector: 2092.65 ms
+	deque: 11.9319 ms
+	list: 16.9219 ms
+
+RandomInsert:
+	vector: 2468.84 ms
+	deque: 368.903 ms
+	list: 6452.59 ms
+
+RandomErase:
+	vector: 2040.86 ms
+	deque: 372.052 ms
+	list: 3989.67 ms
+
+IterateSum:
+	vector: 17.6542 ms
+	deque: 20.0187 ms
+	list: 26.6581 ms
+
+RandomAccess:
+	vector: 16.7362 ms
+	deque: 19.2917 ms
+	list: 32.9655 ms
+
+
+
+N=1048576 elements
+PushBack:
+	vector: 17.0281 ms
+	deque: 28.8462 ms
+	list: 51.0489 ms
+
+PushFront:
+	vector: 33420.5 ms
+	deque: 47.4934 ms
+	list: 68.0754 ms
+
+RandomInsert:
+	vector: 39884.1 ms
+	deque: 1470.33 ms
+	list: 24403.1 ms
+
+RandomErase:
+	vector: 33024.1 ms
+	deque: 1513.2 ms
+	list: 16443.9 ms
+
+IterateSum:
+	vector: 71.0462 ms
+	deque: 80.6091 ms
+	list: 110.027 ms
+
+RandomAccess:
+	vector: 67.3511 ms
+	deque: 77.8555 ms
+	list: 111.389 ms
+
+
+
