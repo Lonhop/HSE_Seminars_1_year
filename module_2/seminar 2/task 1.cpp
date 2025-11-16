@@ -49,7 +49,7 @@ bool HasStatus ( const StatusEffect& got, const StatusEffect& check) {
 
 void AddStatus(std::vector<Character>& characters) {
     StatusEffect add = StatusEffect::BURNING;
-    for (auto& character : characters) { // reference
+    for (auto& character : characters) {
         std::vector<StatusEffect> to_add;
         for (auto got : character.status_effect) {
             if (is_allowed(got, add))
