@@ -1,0 +1,55 @@
+[2025-11-30 20:07:19.327] [INFO] Logger initialized
+[2025-11-30 20:07:19.329] [INFO] Log level set to: DEBUG
+[2025-11-30 20:07:19.329] [INFO]  STARTING PROGRAM 
+[2025-11-30 20:07:19.329] [INFO]  TASK 2: Testing different constructors 
+[2025-11-30 20:07:19.329] [INFO] [default ctor] id=1 this=0x16bd2f0e8
+[2025-11-30 20:07:19.329] [INFO] [const char* ctor] id=2 this=0x16bd2f0c8
+[2025-11-30 20:07:19.329] [INFO] [string ctor] id=3 this=0x16bd2f090
+[2025-11-30 20:07:19.329] [INFO] [copy ctor] id=4 this=0x16bd2f070 from id=3
+[2025-11-30 20:07:19.329] [INFO]  TASK 3: Testing initialization lists 
+[2025-11-30 20:07:19.329] [INFO] [default ctor] id=5 this=0x16bd2f038
+[2025-11-30 20:07:19.329] [INFO] Wrapper constructor (without init list) called
+[2025-11-30 20:07:19.329] [INFO] [string ctor] id=6 this=0x16bd2ed18
+[2025-11-30 20:07:19.329] [INFO] [move assignment] id=5 this=0x16bd2f038 from id=6
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=6 this=0x16bd2ed18
+[2025-11-30 20:07:19.329] [INFO]  TASK 4: Testing delegating constructors 
+[2025-11-30 20:07:19.329] [INFO] [main string ctor] id=1001 this=0x16bd2efe8
+[2025-11-30 20:07:19.329] [INFO] [delegating const char* ctor] id=1001 this=0x16bd2efe8
+[2025-11-30 20:07:19.329] [INFO] [delegating default ctor] id=1001 this=0x16bd2efe8
+[2025-11-30 20:07:19.329] [INFO] [main string ctor] id=1002 this=0x16bd2efc8
+[2025-11-30 20:07:19.329] [INFO] [delegating const char* ctor] id=1002 this=0x16bd2efc8
+[2025-11-30 20:07:19.329] [INFO]  TASK 5: Comparing push_back and emplace_back 
+[2025-11-30 20:07:19.329] [INFO] [const char* ctor] id=7 this=0x16bd2ef78
+[2025-11-30 20:07:19.329] [INFO] [move ctor] id=8 this=0x600001844000 from id=7
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=7 this=0x16bd2ef78
+[2025-11-30 20:07:19.329] [INFO] [const char* ctor] id=9 this=0x16bd2ef58
+[2025-11-30 20:07:19.329] [INFO] [copy ctor] id=10 this=0x600000d44060 from id=9
+[2025-11-30 20:07:19.329] [INFO] [move ctor] id=11 this=0x600000d44040 from id=8
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=8 this=0x600001844000
+[2025-11-30 20:07:19.329] [INFO] [const char* ctor] id=12 this=0x600003644040
+[2025-11-30 20:07:19.329] [INFO] [move ctor] id=13 this=0x600003644000 from id=11
+[2025-11-30 20:07:19.329] [INFO] [move ctor] id=14 this=0x600003644020 from id=10
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=11 this=0x600000d44040
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=10 this=0x600000d44060
+[2025-11-30 20:07:19.329] [INFO]  TASK 6: Testing operator overloading 
+[2025-11-30 20:07:19.329] [INFO] [const char* ctor] id=15 this=0x16bd2ef20
+[2025-11-30 20:07:19.329] [INFO] [const char* ctor] id=16 this=0x16bd2ef00
+[2025-11-30 20:07:19.329] [DEBUG] operator== called: id=15 vs id=16
+[2025-11-30 20:07:19.329] [DEBUG] operator< called: id=15 vs id=16
+[2025-11-30 20:07:19.329] [DEBUG] operator+ called: id=15 + id=16
+[2025-11-30 20:07:19.329] [INFO] [string ctor] id=17 this=0x16bd2eee0
+[2025-11-30 20:07:19.329] [INFO]  PROGRAM FINISHED 
+[2025-11-30 20:07:19.329] [INFO] Remaining TrackedString objects: 12
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=17 this=0x16bd2eee0
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=16 this=0x16bd2ef00
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=15 this=0x16bd2ef20
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=9 this=0x16bd2ef58
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=12 this=0x600003644040
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=14 this=0x600003644020
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=13 this=0x600003644000
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=5 this=0x16bd2f038
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=4 this=0x16bd2f070
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=3 this=0x16bd2f090
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=2 this=0x16bd2f0c8
+[2025-11-30 20:07:19.329] [INFO] [dtor] id=1 this=0x16bd2f0e8
+[2025-11-30 20:07:19.329] [INFO] Logger shutting down
