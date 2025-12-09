@@ -35,6 +35,7 @@ public:
         pixels[y * width + x] = value;
     }
     void show() const {
+
         std::cout << "Image" << width << 'x' << height << ":\n";
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
