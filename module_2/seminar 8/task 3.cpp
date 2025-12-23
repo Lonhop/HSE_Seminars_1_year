@@ -29,7 +29,7 @@ public:
     }
     void printShortReport() const override {
         std::cout << "Report: " << name << " \nID: " << id
-                  << "\nRole: " << getRole() << '\n';
+                  << "\nRole: " << getRole() << "\n\n";
     }
 };
 
@@ -50,13 +50,13 @@ public:
 
     void printInfo() const override {
         Employee::printInfo();
-        std::cout << ",Monthly Salary: " << monthlySalary
-                  << "\nPay: " << calculatePay() << '\n';
+        std::cout << "\nMonthly Salary: " << monthlySalary
+                  << "\nPay: " << calculatePay() << "\n\n";
     }
 };
 
-class HourlyEmployee : public Employee {
-private:
+class HourlyEmployee final : public Employee {
+protected:
     double hourlyRate;
     double hoursWorked;
 
@@ -73,14 +73,14 @@ public:
 
     void printInfo() const override {
         Employee::printInfo();
-        std::cout << "Hourly Rate: " << hourlyRate
+        std::cout << "\nHourly Rate: " << hourlyRate
                   << "\nHours Worked: " << hoursWorked
                   << "\nPay: " << calculatePay() << "\n";
     }
 };
 
 class Manager final : public SalariedEmployee {
-private:
+protected:
     double bonus;
 
 public:
