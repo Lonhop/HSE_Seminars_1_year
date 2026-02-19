@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(task01 VERSION 1.0.0)
+
+# Set C++23 standard
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
